@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import BackgroundEffects from "../componentes/helper/BackgroundEffects";
-
+import LoginForm from '../componentes/Login/LoginForm';
 
 const Login = ({ onLogin }) => { // ✅ Recibir la prop onLogin
   const [loginSuccess, setLoginSuccess] = useState(false);
@@ -27,7 +27,7 @@ const Login = ({ onLogin }) => { // ✅ Recibir la prop onLogin
             {/* Logo */}
           <div className="flex justify-center mb-6">
             <div className="w-20 h-20 bg-white/15 backdrop-blur-lg rounded-2xl flex items-center justify-center border border-white/25 shadow-lg shadow-blue-500/20 text-blue-400 text-3xl">
-              <i className="fas fa-wallet"></i>
+              
              <div>
 
                 <img className="w-full h-full" src="/image/FS-1.png" alt="Logo" />
@@ -62,10 +62,10 @@ const Login = ({ onLogin }) => { // ✅ Recibir la prop onLogin
           )}
 
            {/* Formulario */}
-          {/* <LoginForm 
+          <LoginForm 
             onLoginSuccess={handleLoginSuccess}
             onLoginError={handleLoginError}
-          /> */}
+          />
 
            {/* Divisor */}
           <div className="relative my-8">

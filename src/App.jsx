@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard';
 import Reports from './pages/Reports'
 import NewTransaction from './pages/NewTransaction';
 import Login from './pages/Login'; // Importar el nuevo componente Login
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css'
 
 function App() {
