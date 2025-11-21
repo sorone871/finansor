@@ -33,17 +33,33 @@ const LoginForm = ({onLoginSucces, onLoginError}) =>{
 
     return(
         <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Campo Email */}
             <div className="">
+                 {/* Campo Email */}
                 <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                     Correo Electronico
                 </label>
 
                 {/* Cdiv para posicionar el icono */}
-                <div className="relative">
+                <div className="relative flex items-center">
+                     {/* input EMAIL */}
+                    <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    className="peer  block w-full text-white pl-12 pr-4 py-4 bg-white/10 border border-white/10 rounded-2xl placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-white/50 focus:border-blue-500/50 backdrop-blur-lg 
+                    shadow-2xl shadow-blue-500/20 focus:shadow-blue-500/40
+                    transition-all duration-300"
+                    placeholder="Tu@email.com"
+                    
+                    />
                     {/* Icono del email - Absoluto */}
-                    <div className="absolute inset-y-0">
-                       <i className="fas fa-envelope text-blue-400/80 text-lg"></i> 
+                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none transition-all duration-300 text-blue-400/80 peer-focus:text-[#00f3ff]
+                    peer-focus:[text-shadow:0_0_10px_rgba(0,243,255,0.7)]">
+
+                       <i className="fas fa-envelope   text-lg
+                       "></i> 
+
                     </div>
                 </div>
 

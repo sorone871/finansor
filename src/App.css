@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@layer components {
+  .peer-focus\\:neon-cyan:focus ~ .peer-focus\\:neon-cyan {
+    color: #00f3ff;
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.7);
+  }
+}

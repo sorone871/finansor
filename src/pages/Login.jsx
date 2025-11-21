@@ -23,7 +23,25 @@ const Login = ({ onLogin }) => { // ✅ Recibir la prop onLogin
       <BackgroundEffects />
       
       <section className='w-full max-w-md z-10 '>
-        <div className="bg-white/10 backdrop-blur-xl p-[1rem] rounded-3xl border-white/20 shadow-2xl shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-400 hover:-translate-y-2">
+        <div className="relative
+  bg-white/10 backdrop-blur-xl p-4 rounded-3xl border-white/20
+  shadow-2xl shadow-gray-900
+  hover:shadow-blue-500/40 focus-within:shadow-blue-500/40
+  transition-all duration-400
+  hover:-translate-y-2 focus-within:-translate-y-2
+  
+  overflow-hidden
+
+  before:content-['']
+  before:absolute 
+  before:top-0
+  before:left-[-100%]
+  before:w-full
+  before:h-full
+  before:bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.1),transparent)]
+  before:transition-[left] before:duration-[0.6s] before:ease
+  hover:before:left-[100%] focus-within:before:left-[100%]
+">
             {/* Logo */}
           <div className="flex justify-center mb-6">
             <div className="w-20 h-20 bg-white/15 backdrop-blur-lg rounded-2xl flex items-center justify-center border border-white/25 shadow-lg shadow-blue-500/20 text-blue-400 text-3xl">
